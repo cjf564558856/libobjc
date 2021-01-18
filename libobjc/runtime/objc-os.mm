@@ -884,12 +884,7 @@ void _objc_init(void)
     static_init();
     lock_init();
     exception_init();
-    // 保存 - libobjc - dyld
-    // C++ 怎么去做到通知
-    // 指针 - 回调 - 函数的地址
-    
-    // 这里就是我们的数据 - images  - objc lib
-    // dyld
+
     _dyld_objc_notify_register(&map_images, load_images, unmap_image);
 }
 

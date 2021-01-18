@@ -342,7 +342,7 @@ void environ_init(void)
             DebugPoolAllocation = true;
         }
     }
-
+    
     // Print OBJC_HELP and OBJC_PRINT_OPTIONS output.
     if (PrintHelp  ||  PrintOptions) {
         if (PrintHelp) {
